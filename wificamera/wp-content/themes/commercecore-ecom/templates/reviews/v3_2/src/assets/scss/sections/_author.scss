@@ -1,0 +1,44 @@
+.author {
+  padding: 24px 32px;
+  border: 1px solid #e0e0e0;
+  background: #f2f2f2;
+
+  &__top {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__content {
+    &--icon {
+      margin-bottom: 4px;
+    }
+
+    &--written {
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    &--name {
+      color: #000;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 8px 0 0 0;
+    }
+  }
+
+  &__bottom {
+    color: #4f4f4f;
+    font-size: 18px;
+    font-weight: 400;
+    @include sm-max {
+      font-size: 16px;
+    }
+
+    p {
+      margin-bottom: 0px !important;
+    }
+  }
+}

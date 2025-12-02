@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: var(--logo-width-desktop);
+  @include sm-max {
+    width: var(--logo-width-mobile);
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

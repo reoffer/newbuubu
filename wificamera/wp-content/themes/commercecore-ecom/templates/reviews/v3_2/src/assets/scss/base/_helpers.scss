@@ -1,0 +1,23 @@
+.desktop {
+  @include sm-max {
+    display: none !important;
+  }
+}
+
+.mobile {
+  @include md-min {
+    display: none !important;
+  }
+}
+/*.floaterActive {
+  @include sm-max {
+    max-height: unset;
+    bottom: 0;
+  }
+}*/
+
+.mobileMargin {
+  @include md-max {
+    margin-top: 16px;
+  }
+}

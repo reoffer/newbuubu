@@ -1,0 +1,39 @@
+@mixin xs-max {
+    @media screen and (max-width: 390px) {
+        @content;
+    }
+}
+
+@mixin sm-min {
+    @media screen and (max-width: 490px) {
+        @content;
+    }
+}
+
+@mixin sm-max {
+	@media screen and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin md-min {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin md-max {
+	@media screen and (max-width: 1091px) {
+		@content;
+	}
+}
+
+@mixin lg-min {
+	@media screen and (min-width: 1092px) {
+		@content;
+	}
+}
+
+@mixin button-spacing($paddingX: 8px, $paddingY: 16px) {
+	padding: $paddingX $paddingY;
+}

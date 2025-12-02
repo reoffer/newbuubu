@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="84" height="16" viewBox="0 0 84 16">
+  <defs>
+    <style>.cls-1{fill:#00b890;}.cls-2{fill:#fff;}</style>
+  </defs>
+  <path class="cls-1" d="m16,0H0v16h16V0Z"></path>
+  <path class="cls-1" d="m33,0h-16v16h16V0Z"></path>
+  <path class="cls-1" d="m25,0h-8v16h8V0Z"></path>
+  <polygon class="cls-2" points="8 2.33 9.84 6.06 13.96 6.66 10.98 9.57 11.69 13.67 8 11.73 4.31 13.67 5.02 9.57 2.04 6.66 6.16 6.06 8 2.33"></polygon>
+  <polygon class="cls-2" points="25 2.33 26.84 6.06 30.96 6.66 27.98 9.57 28.69 13.67 25 11.73 21.31 13.67 22.02 9.57 19.04 6.66 23.16 6.06 25 2.33"></polygon>
+  <path class="cls-1" d="m67,0h-16v16h16V0Z"></path>
+  <path class="cls-1" d="m59,0h-8v16h8V0Z"></path>
+  <polygon class="cls-2" points="59 2.33 60.84 6.06 64.96 6.66 61.98 9.57 62.69 13.67 59 11.73 55.31 13.67 56.02 9.57 53.04 6.66 57.16 6.06 59 2.33"></polygon>
+  <path class="cls-1" d="m84,0h-16v16h16V0Z"></path>
+  <path class="cls-1" d="m76,0h-8v16h8V0Z"></path>
+  <polygon class="cls-2" points="76 2.33 77.84 6.06 81.96 6.66 78.98 9.57 79.69 13.67 76 11.73 72.31 13.67 73.02 9.57 70.04 6.66 74.16 6.06 76 2.33"></polygon>
+  <path class="cls-1" d="m50,0h-16v16h16V0Z"></path>
+  <path class="cls-1" d="m42,0h-8v16h8V0Z"></path>
+  <polygon class="cls-2" points="42 2.33 43.84 6.06 47.96 6.66 44.98 9.57 45.69 13.67 42 11.73 38.31 13.67 39.02 9.57 36.04 6.66 40.16 6.06 42 2.33"></polygon>
+</svg>

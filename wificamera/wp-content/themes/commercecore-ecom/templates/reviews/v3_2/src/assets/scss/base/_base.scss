@@ -1,0 +1,218 @@
+* {
+    -webkit-user-select: text !important;
+    -webkit-touch-callout: default !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+
+    &::selection {
+        background-color: var(--product-index-background);
+        color: var(--product-index-text-color);
+    }
+}
+
+@mixin body-class {
+    body.review_page-template-single-review_page_v3_2-php {
+        -webkit-font-smoothing: antialiased;
+
+        .wrapper {
+            background-color: var(--body-wrapper-background-color, #f9f9f9);
+            padding-bottom: 32px;
+            @include sm-max {
+                padding-bottom: 16px;
+            }
+        }
+
+        .container-box {
+            max-width: 1000px;
+            margin: 0 auto;
+            @include md-max {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        a,
+        .cta-block--cta {
+            transition: 0.35s;
+        }
+    }
+}
+
+.product-collapse-content > p:last-of-type {
+    margin-bottom: 0px !important;
+}
+
+.exit-popup {
+    .product--score-cta {
+        font-family: "Open-sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        width: 100%;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        border-radius: 3px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        padding: 15px 10px;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition: background-color 0.2s;
+        text-transform: capitalize;
+
+        &[theme="blue"] {
+            background-color: #0d40ff;
+            box-shadow: 0 3px 0 #0025ad;
+            color: #ffffff;
+
+            > svg {
+                fill: #fff;
+            }
+
+            @media (pointer: fine) {
+                &:hover {
+                    background-color: #002fdd;
+                    box-shadow: 0 3px 0 #0025ad;
+                }
+            }
+        }
+
+        &[theme="red"] {
+            background: #e80000;
+            box-shadow: 0 3px 0 #a30000;
+            color: #ffffff;
+
+            > svg {
+                transition: 300ms ease-in;
+                fill: #fff;
+            }
+
+            @media (pointer: fine) {
+                &:hover {
+                    background: #c80000;
+                    box-shadow: 0 3px 0 #a30000;
+                }
+            }
+        }
+
+        &[theme="golden"] {
+            background: linear-gradient(180deg, #ffd469 0%, #ff9017 100%);
+            box-shadow: 0 3px 0 #cc6e00;
+            color: #263a54;
+            transition: 150ms ease-in;
+            overflow: hidden;
+            position: relative;
+
+            > span {
+                z-index: 2;
+            }
+
+            > svg {
+                fill: #263a54;
+                z-index: 2;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                transition: opacity 150ms ease-in;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                box-shadow: 0 3px 0 #cc6e00;
+                background: linear-gradient(180deg, #ffc533 0%, #e57800 100%);
+            }
+
+            @media (pointer: fine) {
+                &:hover {
+                    box-shadow: 0 3px 0 #cc6e00;
+
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        &[theme="orange"] {
+            background: #ff6600;
+            box-shadow: 0 3px 0 #b84900;
+            color: #ffffff;
+
+            > svg {
+                fill: #fff;
+            }
+
+            @media (pointer: fine) {
+                &:hover {
+                    background: #e15a00;
+                    box-shadow: 0 3px 0 #b84900;
+                }
+            }
+        }
+
+        &[theme="green"] {
+            background: #00b67a;
+            box-shadow: 0 3px 0 #0b9e2e;
+            color: #ffffff;
+
+            > svg {
+                fill: #fff;
+            }
+
+            @media (pointer: fine) {
+                &:hover {
+                    background: #00ba56;
+                    box-shadow: 0 3px 0 #0b9e2e;
+                }
+            }
+        }
+
+        &[theme="custom"] {
+            background: var(--product-cta-background);
+            box-shadow: 0 3px 0 var(--product-cta-shadow-color);
+            color: var(--product-cta-text-color);
+
+            > svg {
+                fill: var(--product-cta-text-color);
+            }
+
+            @media (pointer: fine) {
+                &:hover {
+                    background: var(--product-cta-background-hover);
+                    box-shadow: 0 3px 0 var(--product-cta-shadow-color);
+                }
+            }
+        }
+    }
+}
+
+.cta-padding {
+    @include sm-max {
+        padding: 5px 0px;
+    }
+}
+
+#review_page-template-single-review_page_v3_2 .article--subtitle {
+    color: #0769ed !important;
+}
+
+.review_page-template-single-review_page_v3_2 .ol-numeration-wrapper {
+  margin-top: 1px;
+}

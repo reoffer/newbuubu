@@ -1,0 +1,280 @@
+.cardBody {
+  &--assessment {
+    background: var(--product-card-background-color);
+    overflow: hidden;
+    height: 0px;
+    transition: max-height 300ms cubic-bezier(0.26, 0, 0.24, 0.99);
+
+    &__wrapper {
+      padding: 16px 0px 24px 0px;
+      border-top: 1px solid #f2f2f2;
+      margin-left: 24px;
+      margin-right: 24px;
+      display: flex;
+      @include sm-max {
+        flex-direction: column-reverse;
+        padding: 16px 0px;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+    }
+
+    &__list {
+      width: 67.67%;
+      margin-right: 24px;
+      @include sm-max {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 24px;
+      }
+
+      &--article {
+        margin-bottom: -27px;
+
+        > p {
+          font-family: "Open Sans", sans-serif;
+          color: #4f4f4f !important;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          margin-bottom: 10px;
+
+          > a {
+            text-decoration: underline;
+            font-weight: 700;
+            color: var(--summary-link-color);
+            transition: color 300ms ease-in-out;
+            @media (pointer: fine) {
+            }
+          }
+
+          > br {
+            line-height: 12px;
+          }
+        }
+      }
+    }
+
+    &__listItem {
+      margin-bottom: 24px;
+    }
+
+    &__ctaBlock {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @import "../buttons/main-cta";
+
+    &__cta {
+      min-width: 300px;
+      font-weight: 700;
+    }
+
+    &__listHeading {
+      color: var(--assessment-heading-color);
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 16px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        background: var(--assessment-divider-color);
+        height: 100%;
+      }
+
+      &__listDescription {
+        color: var(--assessment-description-color);
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+
+        > p:not(:last-of-type) {
+          margin-bottom: 24px;
+        }
+
+        > p:last-of-type {
+          margin-bottom: 0px !important;
+        }
+      }
+    }
+
+    &--table {
+      width: 33.33%;
+      @include sm-max {
+        width: 100%;
+      }
+
+      &__image {
+        margin-bottom: 16px;
+        display: block;
+        width: 100%;
+        @include sm-max {
+          width: 100%;
+        }
+      }
+
+      &__wrapper {
+        border: 1px solid #e0e0e0;
+        padding: 8px;
+      }
+
+      &__heading {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #f2f2f2;
+        color: var(--assessment-tableHeading-color) !important;
+
+        p {
+          margin-bottom: 0px !important;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: var(--assessment-tableHeading-color);
+
+          > span {
+            color: #134f6d;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cta-block {
+  &--tooltip {
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background: var(--product-cta-tooltip-background, #fff);
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+    position: relative;
+    margin-top: 22px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -10px;
+      transform: translateX(-50%);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
+      -webkit-filter: drop-shadow(1px -1px 1px rgba(0, 0, 0, 0.15));
+      border-bottom: 10px solid var(--product-cta-tooltip-background, #fff);
+    }
+
+    &__icon {
+      width: 16px;
+      margin-right: 4px;
+    }
+
+    &__text {
+      margin-left: 4px;
+      color: var(--product-cta-tooltip-text-color, #134f6d);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px;
+      text-align: left;
+    }
+
+    &__discount {
+      color: var(--product-cta-focus-text-color);
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; /* 133.333% */
+      margin-top: 8px;
+    }
+  }
+}
+
+.assessment-table {
+  margin-top: 12px;
+  width: 100%;
+
+  &__listItem:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+
+    > p {
+      color: var(--assessment-tableHeading-color);
+    }
+
+    &--text {
+      font-family: "Open Sans", sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 12px;
+      color: var(--assessment-tableHeading-color);
+    }
+  }
+
+  &__score {
+    background: var(--assessment-tablePassive-color);
+    height: 12px;
+    border-radius: 2px;
+    width: 100%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 100%;
+      background: var(--assessment-tableActive-color);
+      z-index: 2;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .assessment-score-#{$i} {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: $i * 10%;
+      height: 100%;
+      background: var(--assessment-tableActive-color);
+      z-index: 2;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1032px) {
+  .cardBody--assessment--cta {
+    min-width: 0;
+    width: 100%;
+  }
+}
