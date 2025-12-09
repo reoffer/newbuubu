@@ -1,0 +1,75 @@
+/*
+ Theme Name: Codefunnels Theme
+ Author: FilopoulosDim
+ Author URI: https://github.com/FilopoulosD
+ Description: Introducing the "Codefunnels Theme", the Megazord of all themes. We have everything. Child theme? Authority? Digital? You name it!
+ Version: 1.0
+ License: GNU General Public License v2 or later
+ License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme {
+    background-color: #646464 !important;
+    border-top: none;
+    font-family: "Source Sans Pro", sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.moove-gdpr-cookie-notice {
+    p {
+        font-weight: 400 !important;
+    }
+}
+
+#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.moove-gdpr-infobar-allow-all {
+    color: white;
+    background-color: #00c249 !important;
+}
+
+#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.moove-gdpr-infobar-reject-btn {
+    background-color: rgba(157, 157, 157, 0.7215686275);
+    border: 1px solid #5c5959;
+}
+
+.moove-gdpr-button-holder {
+    button {
+        font-weight: 400 !important;
+    }
+}
+
+button.mgbutton.moove-gdpr-infobar-allow-all:hover {
+    transform: scale(1.06);
+    color: #3f3f3f !important;
+}
+
+button.mgbutton.moove-gdpr-infobar-reject-btn:hover {
+    background-color: rgba(157, 157, 157, 0.7215686275) !important;
+    color: #5c5959 !important;
+}
+
+#cookie-consent-banner {
+    /* Basic styling */
+    background: #222;
+    /* Dark background */
+    color: white;
+    /* White text */
+    padding: 20px;
+    /* Some padding */
+    position: fixed;
+    /* Stick to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+    /* Ensure it's on top */
+}
+
+#cookie-consent-banner button {
+    margin: 0 10px;
+    padding: 10px;
+    color: #222;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
